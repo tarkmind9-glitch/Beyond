@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  // Open the browser at whatever port the dev server ends up on
+  server: { open: true },
   build: {
     chunkSizeWarningLimit: 1500,
     rollupOptions: {
